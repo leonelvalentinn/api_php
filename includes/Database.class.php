@@ -16,4 +16,8 @@
         die('ERROR: ' . $e->getMessage());
       }
     }
+
+    static function closeConnection(&$conn) {
+      $conn = null;
+  }
   }
